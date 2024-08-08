@@ -87,10 +87,6 @@ with col_bulan:
         options = options
     )
 
-_, ctr, _ = st.columns([4,4,3])
-with ctr:
-    st.markdown('## JAKARTA')
-    
 expander_keluar_masuk_all = st.expander('Rekapitulasi Keluar/Masuk Barang')
 df_masuk_nov = df_stok[
     (df_stok['tahun_masuk'] == tahun) &
