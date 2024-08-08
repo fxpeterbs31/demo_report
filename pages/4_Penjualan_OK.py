@@ -344,6 +344,11 @@ for brand_name in li_brand:
     if not os.path.exists(file_path):
         os.makedirs(file_path)
 
+    # depo
+    # df_stok_brand_sold = df_stok_brand_sold[
+    #     df_stok_brand_sold['Tipe'] == 'Depo'
+    # ]
+
     if df_stok_brand_sold.shape[0] > 0:
         df_stok_brand_sold = df_stok_brand_sold.reset_index(drop = True)
         df_stok_brand_sold_expand = expand_stok(df_stok_brand_sold)
@@ -390,6 +395,7 @@ for brand_name in li_brand:
             df_keluar_bulan_group['Total'] > 0
         ]
 
+        # urutin memori
         li_memori = df_keluar_bulan_detail.apply(lambda x: expand_cek_stok(x['Nama Barang']), axis = 1)
         nama_barang_no_memori = li_memori.str[0]
         ram = li_memori.str[1]
