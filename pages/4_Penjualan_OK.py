@@ -7,7 +7,7 @@ import os
 import locale
 locale.setlocale(locale.LC_ALL, 'id_ID')
 
-st.set_page_config(page_title = 'Laporan OK')
+st.set_page_config(page_title = 'Demo Laporan OK')
 
 st.session_state.stats_income_general   = False
 st.session_state.plot_income_general    = False
