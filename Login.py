@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title = 'Laporan OK')
+st.set_page_config(page_title = 'Demo Laporan OK')
 
 st.session_state.general_info_penjualan = False
 st.session_state.grafik_penjualan       = False
