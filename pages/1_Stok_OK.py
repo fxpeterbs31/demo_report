@@ -7,7 +7,7 @@ import calendar
 import locale
 locale.setlocale(locale.LC_ALL, 'id_ID')
 
-st.set_page_config(page_title = 'Laporan OK')
+st.set_page_config(page_title = 'DemoLaporan OK')
 
 st.session_state.general_info_penjualan = False
 st.session_state.grafik_penjualan       = False
